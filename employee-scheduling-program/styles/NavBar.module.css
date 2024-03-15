@@ -1,0 +1,78 @@
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  height: 4.5vh;
+
+  width: 100%;
+  background: rgb(19,19,19);
+  background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(41,41,41,1) 100%);
+}
+
+.navBarButtonBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarButtonBox a:hover {
+  color: white;
+}
+
+.navBarContainer > .navBarButtonBox:first-child > .navBarButton:last-child {
+  border-right: solid rgb(112, 112, 112) 1px;
+}
+
+.navBarButton {
+  display: flex;
+  padding: .9em;
+  border-left: solid rgb(112, 112, 112) 1px;
+
+/*   text-align: center;
+  vertical-align: middle;
+  justify-content: center; */
+
+  text-align: center;
+  user-select: none;
+
+  background: rgb(19,19,19);
+  background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(41,41,41,1) 100%);
+
+  color: white;
+  text-decoration: none;
+}
+
+.navBarButton:hover {
+  background: rgb(60,60,60);
+  background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(97,95,95,1) 100%);
+
+  cursor: pointer;
+}
+
+.navBarButtonChild {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBarText {
+  white-space: nowrap;
+}
+
+.navBarButtonChild img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.circularImageWrapper {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  overflow: hidden;
+  margin-right: 0.4vw;
+}

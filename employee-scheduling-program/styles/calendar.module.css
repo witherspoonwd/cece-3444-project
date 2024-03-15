@@ -1,0 +1,93 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.calendarContainer {
+  width: 100%;
+  padding: 0;
+}
+
+.calendarPanelContainer {
+  width: 75%;
+  padding: 2%;
+  height: 500pt;
+}
+
+.calendarPanelBody {
+  height: 78vh;
+}
+
+.panelsContainer {
+  padding: 2%;
+  width: 20%;
+}
+
+.panelsContainer > div {
+  margin-bottom: 1.75vh;
+}
+
+.panelList {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+  padding-top: 1vh;
+}
+
+.extendModalPanel {
+  width: 35vw;
+}
+
+.shiftTradeRequestBody,  .shiftCreatorBody {
+  padding-top: 1vh;
+}
+
+.shiftCreatorHeader {
+  padding-bottom: 0.8vh;
+}
+
+.shiftTradeRequestHeader {
+  padding-bottom: 0.5vh;
+}
+
+.shiftTradeRequestBody select, .shiftCreatorBody select {
+  margin-bottom: 0.7vh;
+  padding-right: 1vw;
+  font-size: 0.95em;
+}
+
+.shiftCreatorSelectHeader {
+  padding-bottom: 0.2vh;
+}
+
+.shiftTradeDispBody {
+  padding-top: 1vh;
+}
+
+.shiftHeaderStatusDisplay {
+  padding-top: 1vh;
+}
+
+.shiftHeaderSelectorBox {
+  padding-top: 0.5vh;
+  user-select: none;
+}
+
+.shiftHeaderActionBox {
+  padding-top: 1vh;
+}
+
+.pendingShiftChangeContainer {
+  padding-bottom: 1vh;
+}
+
+.confirmButton {
+  color: rgb(195, 20, 20);
+}
+
+.confirmButton:hover {
+  color: rgb(245, 77, 77);
+}

@@ -1,0 +1,48 @@
+.panel {
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+
+  border: solid 2px black;
+  border-radius: 12px;
+  /* border-radius: 5px; */
+
+/*   box-shadow: -5px 5px rgba(85, 107, 107, 0.5); */
+
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.panelBody {
+  /* padding: 3%; */
+}
+
+.panelNoPadding {
+  padding: 0;
+}
+
+.panelHeader {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.panelList {
+  list-style-type: none;
+}
+
+.hoverablePanel {
+  user-select: none;
+  transition: box-shadow 0.2s;
+}
+
+.hoverablePanel:hover {  
+/*   box-shadow: -10px 10px rgb(85, 107, 107); */
+box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hoverablePanel:not(:hover) {
+/*   box-shadow: -5px 5px rgb(85, 107, 107); */
+box-shadow: -5px 5px rgba(0, 0, 0, 0.5);
+}

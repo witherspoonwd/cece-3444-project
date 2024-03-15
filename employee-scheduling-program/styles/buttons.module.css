@@ -1,0 +1,43 @@
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  justify-content: right;
+}
+
+.button {
+  background-color:#7eb3c9;
+  margin: 8px;
+  margin-right: 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  user-select: none;
+
+  color: white;
+
+  align-items: center;
+}
+
+.floatButton {
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #91cbe4;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color:rgb(240, 248, 255);
+}
+
+.buttonHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

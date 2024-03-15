@@ -1,0 +1,8 @@
+// create a file called ".env.local"
+
+// copy and paste this into it, while adding your user and pass set up in the mysql install
+SQL_HOST=localhost
+SQL_DB=ESPdb
+SQL_USR=
+SQL_PASS=
+SQL_SOCK=

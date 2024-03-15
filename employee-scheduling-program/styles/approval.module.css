@@ -1,0 +1,101 @@
+.topBox {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+
+.bottomBox {
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+}
+
+.topPanels, .notificationPanelContainer {
+  width: 60vw;
+}
+
+.topPanels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerPadding {
+  padding: 1vw;
+}
+
+.notificationPanelContainer {
+  display: flex;
+  width: 60vw;
+}
+
+.topPanelWidths {
+  width: 42.5%;
+}
+.colorPicker {
+  color: #7e90bd
+}
+
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2%;
+}
+
+.containerPadding {
+  padding: 1vw;
+}
+
+.fixedPanelWidth {
+  width: 65%;
+}
+
+.container {
+  max-width: 1870px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.notificationPanelItemHeader {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.notificationPanelItemContainer {
+  padding-bottom: 1vh;
+}
+
+.notificationPanelMods {
+  width: 100%;
+}
+
+.notificationPanelBodyMods {
+  padding-top: 1vh;
+  height: 95%;
+  overflow: auto;
+}
+
+.psuedoLink {
+  color: rgb(16, 111, 219);
+  text-decoration: none;
+}
+
+.psuedoLink:hover{
+  color: rgb(88, 163, 248);
+  cursor: pointer;
+}
+
+.AcceptDenyContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+.AcceptDenyContainer div {
+	margin-left: 0.5vw;
+	margin-top: 0.25vw;
+}

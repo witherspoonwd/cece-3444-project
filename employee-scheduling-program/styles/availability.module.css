@@ -1,0 +1,61 @@
+.availabilityDashboardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.availabilityBody {
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.timeOffRequestBody {
+  width: 25%;
+/*   background-color: bisque; */
+
+/*   border-left-style: dashed;
+  border-left-width: 2px;
+  border-left-color: rgb(147, 147, 147); */
+}
+
+.availabilityPanelHolder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5vw;
+  width: 100%;
+}
+
+.panelHeader {
+  padding-bottom: 0.75vh;
+}
+
+.panelHeader label {
+  user-select: none;
+}
+
+.panelTopHeader {
+  padding-top: 0.75vh;
+}
+
+.panelsContainer {
+  padding: 2%;
+  width: 20%;
+}
+
+.panelSpace {
+  margin-top: 2vh;
+}
+
+.pendingShiftChangeContainer {
+  padding-bottom: 1vh;
+}
+
+.confirmButton {
+  color: rgb(195, 20, 20);
+}
+
+.confirmButton:hover {
+  color: rgb(245, 77, 77);
+}

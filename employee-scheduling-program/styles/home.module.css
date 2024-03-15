@@ -1,0 +1,376 @@
+.topBox {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+
+.bottomBox {
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+}
+
+.welcomeMessage, .selectionBoxContainer {
+  width: 40vw;
+}
+
+.topPanels, .notificationPanelContainer {
+  width: 60vw;
+}
+
+.topPanels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notificationPanelContainer {
+  display: flex;
+  width: 60vw;
+}
+
+.topPanelWidths {
+  width: 42.5%;
+}
+
+.welcomeMessage {
+  font-size: 4.5vw;
+  font-weight: bold;
+/*   color: rgb(86, 49, 159); */
+  color:rgb(24, 96, 203);
+
+/*   -webkit-text-stroke: 1px black; */
+  user-select: none;
+/*   text-shadow: -8px 8px rgb(221, 219, 219); */
+}
+sarahgarza.png
+.colorPicker {
+  color: #7e90bd
+}
+
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2%;
+}
+
+.containerPadding {
+  padding: 1vw;
+}
+
+.selectionBoxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selectionBoxHeader {
+  font-size: 3vh;
+  font-weight: bold;
+  white-space: nowrap;
+  color: black;
+}
+
+.selectionBoxLinkBox{
+  justify-content: right;
+}
+
+.selectionBoxLinkBox img {
+  width: 150px;
+}
+
+.selectionBoxBody {
+  width: 20vw;
+}
+
+.selectionBoxLink {
+  display: block;
+}
+
+.selectionBoxLink {
+  padding: 3%;
+  width: 20vw;
+  padding-right: 17%;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.selectionBoxImage {
+  position: absolute;
+  top: 0.6vh;
+  right: -1vw;
+}
+
+.selectionBoxImage img {
+  width: 3vw;
+  height: auto;
+}
+
+.fixedPanelWidth {
+  width: 65%;
+}
+
+.container {
+  max-width: 1870px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.availabilityDay {
+  margin-bottom: 0px;
+}
+
+.timeSelection {
+  display: flex;
+  align-items: left;
+  margin-top: 5px;
+}
+
+.empWeekSubtitle {
+  font-size: 1em;
+  font-style: italic;
+
+  padding-bottom: 4%;
+}
+
+.empWeekImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.empWeekImageContainer img {
+  width: 10vw;
+  height: 10vw;
+}
+
+.empWeekEmployeeName {
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.empWeekPanelBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 90%;
+}
+
+.scheduleSummaryTableContainer {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  padding-top: 1vh;
+}
+
+.scheduleSummaryTableSpace {
+	padding-right: 1vh;
+}
+
+.notificationPanelItemHeader {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.notificationPanelItemContainer {
+  padding-bottom: 1vh;
+}
+
+.notificationPanelMods {
+  width: 100%;
+}
+
+.notificationPanelBodyMods {
+  padding-top: 1vh;
+  height: 95%;
+  overflow: auto;
+}
+
+.psuedoLink {
+  color: rgb(16, 111, 219);
+  text-decoration: none;
+}
+
+.psuedoLink:hover{
+  color: rgb(88, 163, 248);
+  cursor: pointer;
+}
+
+.submitButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0058bf;
+}
+
+.addAnnouncementButton {
+  position: absolute;
+  top: 1.25vw;
+  right: 1.25vw;
+  background-color: #fff; /* Blue color for the button background */
+  color: #000000; /* White color for the button text */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Circular shape */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addAnnouncementButton:hover {
+  background-color: #000000; /* Darker blue color on hover */
+  color: #fff;
+}
+
+/* home.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.modalContent h2 {
+  margin-top: 0;
+}
+
+.modalContent label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modalContent input,
+.modalContent textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modalContent button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalContent button:last-child {
+  margin-right: 0;
+}
+
+.notificationPanelContainer {
+  position: relative; /* Required for absolute positioning of the button */
+}
+
+.addEmployeeOfTheWeekButton {
+  position: absolute;
+  top: 5.5vw;
+  right: 3.15vw;
+  background-color: #fff; /* Blue color for the button background */
+  color: #000000; /* White color for the button text */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Circular shape */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2; /* Ensure the button is above the panel content */
+}
+
+.addEmployeeOfTheWeekButton:hover {
+  background-color: #000000; /* Darker blue color on hover */
+  color: #fff;
+}
+
+.employeeOfTheWeekHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extendModalPanel {
+	width: 20vw;
+}
+
+.employeeOTWModalHeader {
+	padding-bottom: 2vh;
+}
+
+.extendAnnouncementModal {
+	width: 30vw;
+}
+
+.extendViewAnnouncementModal {
+	width: 45.5vw;
+}
+
+.titleInput {
+  width: 15vw; /* Set the width of the title input */
+  height: 1vw; /* Set the height of the title input */
+}
+
+.dateInput {
+  width: 15vw; /* Set the width of the date input */
+  height: 1vw; /* Set the height of the date input */
+}
+
+.contentTextarea {
+  width: 25vw; /* Set the width of the content textarea */
+  height: 4vw; /* Set the height of the content textarea */
+}
+
+.notificationPanelContentPreview {
+	justify-content: center;
+}
+

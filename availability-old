@@ -1,0 +1,219 @@
+const renderTimeOffRequestForm = () => {
+  return (
+    <form onSubmit={handleSubmitTimeOffRequest} className={styles.form}>
+      <div className={styles.timeOffRequest}>
+        <h1>Request Time Off</h1>
+        <div className={styles.dateSelection}>
+          <label htmlFor="startDay">Start Day:</label>
+          <input
+            type="date"
+            id="startDay"
+            name="startDay"
+            value={timeOffRequest.startDay}
+            onChange={handleStartDayChange}
+          />
+        </div>
+        <div className={styles.dateSelection}>
+          <label htmlFor="endDay">End Day:</label>
+          <input
+            type="date"
+            id="endDay"
+            name="endDay"
+            value={timeOffRequest.endDay}
+            onChange={handleEndDayChange}
+          />
+        </div>
+        <button type="submit" className={styles.submitButton}>
+          Request Time Off
+        </button>
+      </div>
+    </form>
+  );
+};
+
+return (
+  <Fragment>
+    <NavBar />
+    <div className={styles.availabilityBodyBox}>
+      <div className={styles.availabilityContainer}>
+      <h1 className={styles.title}>Set Work Availability</h1>
+
+        {renderAvailabilityForm()}
+      </div>
+      <SelectionBoxContainer />
+    </div>
+  </Fragment>
+);
+} */
+
+/* export default function Availability() {
+  const [availability, setAvailability] = useState({
+    Sunday: { start: '', end: '', allDay: false },
+    Monday: { start: '', end: '', allDay: false },
+    Tuesday: { start: '', end: '', allDay: false },
+    Wednesday: { start: '', end: '', allDay: false },
+    Thursday: { start: '', end: '', allDay: false },
+    Friday: { start: '', end: '', allDay: false },
+    Saturday: { start: '', end: '', allDay: false }
+  });
+
+  const [timeOffRequest, setTimeOffRequest] = useState({
+    startDay: '',
+    endDay: ''
+  });
+
+  const timeOptions = generateTimeOptions();
+
+  const handleAvailabilityChange = (e, day, field) => {
+    const { value } = e.target;
+    setAvailability((prevAvailability) => ({
+      ...prevAvailability,
+      [day]: {
+        ...prevAvailability[day],
+        [field]: value
+      }
+    }));
+  };
+
+  const handleAllDayChange = (e, day) => {
+    const { checked } = e.target;
+    setAvailability((prevAvailability) => ({
+      ...prevAvailability,
+      [day]: {
+        ...prevAvailability[day],
+        allDay: checked,
+        start: checked ? '10:00 AM' : '',
+        end: checked ? '08:00 PM' : ''
+      }
+    }));
+  };
+
+  const handleStartDayChange = (e) => {
+    const { value } = e.target;
+    setTimeOffRequest((prevRequest) => ({
+      ...prevRequest,
+      startDay: value
+    }));
+  };
+
+  const handleEndDayChange = (e) => {
+    const { value } = e.target;
+    setTimeOffRequest((prevRequest) => ({
+      ...prevRequest,
+      endDay: value
+    }));
+  };
+
+  const handleSubmitAvailability = (e) => {
+    e.preventDefault();
+    // Do something with the availability data (e.g., send it to a server)
+    console.log(availability);
+  };
+
+  const handleSubmitTimeOffRequest = (e) => {
+    e.preventDefault();
+    // Do something with the time off request data (e.g., send it to a server)
+    console.log(timeOffRequest);
+  };
+
+  const renderAvailabilityDays = () => {
+    return Object.entries(availability).map(([day, dayAvailability]) => (
+      
+        <Panel header={day} addClass={styles.panelSetPadding}>
+          <div className={styles.timeSelection}>
+            <label htmlFor={`${day}Start`}>Start Time:</label>
+            <select
+              id={`${day}Start`}
+              name={`${day}Start`}
+              value={dayAvailability.start}
+              onChange={(e) => handleAvailabilityChange(e, day, 'start')}
+              disabled={dayAvailability.allDay}
+            >
+              {timeOptions.map((option, index) => (
+                <option key={`${option} + ${index}`} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className={styles.timeSelection}>
+            <label htmlFor={`${day}End`}>End Time:</label>
+            <select
+              id={`${day}End`}
+              name={`${day}End`}
+              value={dayAvailability.end}
+              onChange={(e) => handleAvailabilityChange(e, day, 'end')}
+              disabled={dayAvailability.allDay}
+            >
+              {timeOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className={styles.allDayCheckbox}>
+            <input
+              type="checkbox"
+              id={`${day}AllDay`}
+              name={`${day}AllDay`}
+              checked={dayAvailability.allDay}
+              onChange={(e) => handleAllDayChange(e, day)}
+            />
+            <label htmlFor={`${day}AllDay`}>Available All Day</label>
+          </div>
+        </Panel>
+    ));
+  };
+
+  const renderAvailabilityForm = () => {
+    return (
+      <form onSubmit={handleSubmitAvailability} className={styles.form}>
+        <div className={styles.availabilityContainer}>
+          <div className={styles.availabilityDays}>
+            {renderAvailabilityDays()}
+          </div>
+        </div>
+        <button type="submit" className={styles.submitButton}>
+          Set Availability
+        </button>
+      </form>
+    );
+  }; */
+
+/*   function SelectionBoxContainer(props) {
+    return (
+      <div className={`${styles.selectionBoxContainer} ${styles.containerPadding}`}>
+        <h1 className={styles.title}>Requst Time Off</h1>
+        <Panel addClass={styles.fixedPanelWidth} replaceBodyClass={styles.selectionBoxBody} noPadding={false}>
+          <form onSubmit={handleSubmitTimeOffRequest} className={styles.form}>
+            <div className={styles.dateSelection}>
+              <label htmlFor="startDay">Start Day:</label>
+              <input
+                type="date"
+                id="startDay"
+                name="startDay"
+                value={timeOffRequest.startDay}
+                onChange={handleStartDayChange}
+              />
+            </div>
+            <div className={styles.dateSelection}>
+              <label htmlFor="endDay">End Day:</label>
+              <input
+                type="date"
+                id="endDay"
+                name="endDay"
+                value={timeOffRequest.endDay}
+                onChange={handleEndDayChange}
+              />
+            </div>
+            <button type="submit" className={styles.submitButton}>
+              Request Time Off
+            </button>
+          </form>
+        </Panel>
+      </div>
+      );
+  } */
+  
+/*   
